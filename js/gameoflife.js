@@ -1,8 +1,11 @@
 function seed() {return Array.prototype.slice.call(arguments)}
 
 function same([x, y], [j, k]) {
-  if( x === j || y === k) true
-  if( x != j || y != k ) false
+  if( x === j && y === k){ 
+    return true
+  } else {
+    return false
+  }
   }
 
 // The game state to search for `cell` is passed as the `this` value of the function.
