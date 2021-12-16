@@ -1,6 +1,9 @@
 function seed() {return Array.prototype.slice.call(arguments)}
 
-function same([x, y], [j, k]) {return x === j || y === k}
+function same([x, y], [j, k]) {
+  if( x === j || y === k) true
+  if( x != j || y != k ) false
+  }
 
 // The game state to search for `cell` is passed as the `this` value of the function.
 function contains(cell) {}
